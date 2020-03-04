@@ -16,6 +16,14 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true // hide back button
         self.addCloseButton()
+        // hides navigation bar
+       // self.navigationController?.hidesBarsOnTap = true
+       // self.navigationController?.hidesBarsOnSwipe = true
+       // self.navigationController?.navigationBar.isHidden = true
+        
+        
+       // let designatedVC = self.navigationController?.viewControllers[1] // setting viewcontroller(vc) index number to a constant
+     //   self.navigationController?.popToViewController(designatedVC, animated: true) // jump to designated view controller
         if let nm = name
         {
             self.lblWelcome.text = "Welcome, \(nm)"
@@ -35,7 +43,8 @@ class SecondViewController: UIViewController {
     }
     
     @objc func goBack(){
-        self.navigationController?.popViewController(animated: true)
+       // self.navigationController?.popViewController(animated: true) // workflow is in stack-pop out current page and move back to last page
+        self.navigationController?.popToRootViewController(animated: true)// pop back to root page(eg. Home button)
     }
     /*
     // MARK: - Navigation
