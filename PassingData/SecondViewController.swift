@@ -10,6 +10,8 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var lblWelcome: UILabel!
     var name: String?
     override func viewDidLoad() {
@@ -56,4 +58,14 @@ class SecondViewController: UIViewController {
     }
     */
 
+    @IBAction func btnSaveClick(_ sender: UIButton) {
+       // userDefaults is used for storing data locally
+        UserDefaults.standard.set(txtName.text, forKey: "name")
+    }
+    @IBAction func btnFetchClick(_ sender: UIButton) {
+        // fetching data from local data memory
+        let ud = UserDefaults.standard
+        let name = ud.string(forKey: "name")
+        lblName.text = name
+    }
 }
