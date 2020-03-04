@@ -68,4 +68,7 @@ class SecondViewController: UIViewController {
         let name = ud.string(forKey: "name")
         lblName.text = name
     }
+    @IBAction func btnRemoveClick(_ sender: UIButton) {
+        UserDefaults.standard.removeObject(forKey: "name")
+    }
 }
