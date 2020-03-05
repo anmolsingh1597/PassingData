@@ -9,11 +9,12 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    @IBOutlet weak var switchRememberMe: UISwitch!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var lblWelcome: UILabel!
     var name: String?
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true // hide back button
@@ -37,6 +38,11 @@ class SecondViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+ 
+    override func viewWillAppear(_ animated: Bool) {
+        txtName.text = ""
+        lblName.text = ""
+    }
     
     private func addCloseButton(){
         let btnclose = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(self.goBack))
@@ -57,11 +63,16 @@ class SecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    @IBAction func btnSaveClick(_ sender: UIButton) {
+    
+    @IBAction func btnLogIn(_ sender: UIButton) {
+         if switchRememberMe.isOn == true{
+                    UserDefaults.standard.set(txtName.text, forKey: "name")
+               }
+    }
+    /*   @IBAction func btnSaveClick(_ sender: UIButton) {
        // userDefaults is used for storing data locally
         UserDefaults.standard.set(txtName.text, forKey: "name")
-    }
+    }*/
     @IBAction func btnFetchClick(_ sender: UIButton) {
         // fetching data from local data memory
         let ud = UserDefaults.standard
@@ -72,3 +83,4 @@ class SecondViewController: UIViewController {
         UserDefaults.standard.removeObject(forKey: "name")
     }
 }
+

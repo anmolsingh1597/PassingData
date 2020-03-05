@@ -10,12 +10,16 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 
+    @IBOutlet weak var tblCountry: UITableView!
+    var countryName: [Country] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
+loadCountries()
         // Do any additional setup after loading the view.
     }
-    
+    func loadCountries(){
+        countryName.append(Country.init(name: "Afghanistan", capital: "Afghanistan", flag: #imageLiteral(resourceName: "elephant.png")))
+    }
 
     /*
     // MARK: - Navigation
@@ -27,4 +31,24 @@ class ThirdViewController: UIViewController {
     }
     */
 
+}
+// table in extension
+extension ThirdViewController: UITableViewDataSource, UITableViewDelegate
+{
+    func numberOfSections(in tableview: UITableView) -> Int{
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return countryName.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell =
+        tableView.dequeueReusableCell(withIdentifier: "CountryCell")
+        let country = countryName[indexPath.row]
+        cell?.textLabel?.text = country.name
+        cell?.detailTextLabel?.text = country.capital
+        cell?.imageView?.image = country.flag
+        return cell!
+    }
 }
