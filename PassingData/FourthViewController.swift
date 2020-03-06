@@ -16,8 +16,9 @@ class FourthViewController: UIViewController {
         super.viewDidLoad()
             // Do any additional setup after loading the view.
         countryLabel.text = label
-    }
     
+    }
+
 
     /*
     // MARK: - Navigation

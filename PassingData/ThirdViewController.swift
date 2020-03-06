@@ -12,11 +12,24 @@ class ThirdViewController: UIViewController {
 
     @IBOutlet weak var tblCountry: UITableView!
     var countryName: [Country] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         countryName = DataStorage.getInstance().getAllCountries()
         // Do any additional setup after loading the view.
+        readPlistData()
     }
+//Read pList data
+    func readPlistData(){
+        if let path = Bundle.main.path(forResource: "Country", ofType: "plist"){
+            //print(path)
+            if let dictionary = NSMutableDictionary(contentsOfFile: path){
+                print(dictionary)
+                
+            }
+        }
+    }
+    
   /*  func loadCountries(){
         countryName.append(Country.init(name: "Afghanistan", capital: "Afghanistan", flag: #imageLiteral(resourceName: "elephant.png")))
     }*/
@@ -54,10 +67,10 @@ extension ThirdViewController: UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let c = countryName[indexPath.row]
 //animate to next screen through table values
-        let sb = UIStoryboard(name: "Main", bundle: nil)
+       /* let sb = UIStoryboard(name: "Main", bundle: nil)
         let fourthVC = sb.instantiateViewController(identifier: "fourthVC") as! FourthViewController
         fourthVC.label = c.name
-        self.navigationController?.pushViewController(fourthVC, animated: true)
+        self.navigationController?.pushViewController(fourthVC, animated: true)*/
         print(c.name)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

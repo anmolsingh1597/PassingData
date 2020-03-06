@@ -19,6 +19,8 @@
 		8E3FD884241098DC00AA42E2 /* elephant.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3FD883241098DC00AA42E2 /* elephant.png */; };
 		8E3FD8862411BD7700AA42E2 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FD8852411BD7700AA42E2 /* DataStorage.swift */; };
 		8E3FD8882411C6D100AA42E2 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FD8872411C6D100AA42E2 /* FourthViewController.swift */; };
+		8E3FD88A2411CF3F00AA42E2 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FD8892411CF3F00AA42E2 /* MenuTableViewController.swift */; };
+		8E3FD8B4241310A000AA42E2 /* Country.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E3FD8B3241310A000AA42E2 /* Country.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		8E3FD883241098DC00AA42E2 /* elephant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = elephant.png; path = ../Images/elephant.png; sourceTree = "<group>"; };
 		8E3FD8852411BD7700AA42E2 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		8E3FD8872411C6D100AA42E2 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		8E3FD8892411CF3F00AA42E2 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		8E3FD8B3241310A000AA42E2 /* Country.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Country.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				8E3FD874240F210000AA42E2 /* Info.plist */,
 				8E3FD8802410968400AA42E2 /* Country.swift */,
 				8E3FD8852411BD7700AA42E2 /* DataStorage.swift */,
+				8E3FD8892411CF3F00AA42E2 /* MenuTableViewController.swift */,
+				8E3FD8B3241310A000AA42E2 /* Country.plist */,
 			);
 			path = PassingData;
 			sourceTree = "<group>";
@@ -154,6 +160,7 @@
 				8E3FD884241098DC00AA42E2 /* elephant.png in Resources */,
 				8E3FD873240F210000AA42E2 /* LaunchScreen.storyboard in Resources */,
 				8E3FD870240F210000AA42E2 /* Assets.xcassets in Resources */,
+				8E3FD8B4241310A000AA42E2 /* Country.plist in Resources */,
 				8E3FD86E240F20FF00AA42E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +177,7 @@
 				8E3FD87D241072DA00AA42E2 /* ThirdViewController.swift in Sources */,
 				8E3FD867240F20FF00AA42E2 /* AppDelegate.swift in Sources */,
 				8E3FD8882411C6D100AA42E2 /* FourthViewController.swift in Sources */,
+				8E3FD88A2411CF3F00AA42E2 /* MenuTableViewController.swift in Sources */,
 				8E3FD8812410968400AA42E2 /* Country.swift in Sources */,
 				8E3FD8862411BD7700AA42E2 /* DataStorage.swift in Sources */,
 				8E3FD869240F20FF00AA42E2 /* SceneDelegate.swift in Sources */,
