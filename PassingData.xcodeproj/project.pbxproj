@@ -17,6 +17,8 @@
 		8E3FD87D241072DA00AA42E2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FD87C241072DA00AA42E2 /* ThirdViewController.swift */; };
 		8E3FD8812410968400AA42E2 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FD8802410968400AA42E2 /* Country.swift */; };
 		8E3FD884241098DC00AA42E2 /* elephant.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3FD883241098DC00AA42E2 /* elephant.png */; };
+		8E3FD8862411BD7700AA42E2 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FD8852411BD7700AA42E2 /* DataStorage.swift */; };
+		8E3FD8882411C6D100AA42E2 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FD8872411C6D100AA42E2 /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		8E3FD87C241072DA00AA42E2 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		8E3FD8802410968400AA42E2 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		8E3FD883241098DC00AA42E2 /* elephant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = elephant.png; path = ../Images/elephant.png; sourceTree = "<group>"; };
+		8E3FD8852411BD7700AA42E2 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		8E3FD8872411C6D100AA42E2 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +74,13 @@
 				8E3FD86A240F20FF00AA42E2 /* FirstViewController.swift */,
 				8E3FD87A240F233200AA42E2 /* SecondViewController.swift */,
 				8E3FD87C241072DA00AA42E2 /* ThirdViewController.swift */,
+				8E3FD8872411C6D100AA42E2 /* FourthViewController.swift */,
 				8E3FD86C240F20FF00AA42E2 /* Main.storyboard */,
 				8E3FD86F240F210000AA42E2 /* Assets.xcassets */,
 				8E3FD871240F210000AA42E2 /* LaunchScreen.storyboard */,
 				8E3FD874240F210000AA42E2 /* Info.plist */,
 				8E3FD8802410968400AA42E2 /* Country.swift */,
+				8E3FD8852411BD7700AA42E2 /* DataStorage.swift */,
 			);
 			path = PassingData;
 			sourceTree = "<group>";
@@ -163,7 +169,9 @@
 				8E3FD86B240F20FF00AA42E2 /* FirstViewController.swift in Sources */,
 				8E3FD87D241072DA00AA42E2 /* ThirdViewController.swift in Sources */,
 				8E3FD867240F20FF00AA42E2 /* AppDelegate.swift in Sources */,
+				8E3FD8882411C6D100AA42E2 /* FourthViewController.swift in Sources */,
 				8E3FD8812410968400AA42E2 /* Country.swift in Sources */,
+				8E3FD8862411BD7700AA42E2 /* DataStorage.swift in Sources */,
 				8E3FD869240F20FF00AA42E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

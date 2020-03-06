@@ -14,12 +14,12 @@ class ThirdViewController: UIViewController {
     var countryName: [Country] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-loadCountries()
+        countryName = DataStorage.getInstance().getAllCountries()
         // Do any additional setup after loading the view.
     }
-    func loadCountries(){
+  /*  func loadCountries(){
         countryName.append(Country.init(name: "Afghanistan", capital: "Afghanistan", flag: #imageLiteral(resourceName: "elephant.png")))
-    }
+    }*/
 
     /*
     // MARK: - Navigation
@@ -51,4 +51,17 @@ extension ThirdViewController: UITableViewDataSource, UITableViewDelegate
         cell?.imageView?.image = country.flag
         return cell!
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let c = countryName[indexPath.row]
+//animate to next screen through table values
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let fourthVC = sb.instantiateViewController(identifier: "fourthVC") as! FourthViewController
+        fourthVC.label = c.name
+        self.navigationController?.pushViewController(fourthVC, animated: true)
+        print(c.name)
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(100.0)
+    }
+    
 }
