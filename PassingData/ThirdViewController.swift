@@ -25,7 +25,11 @@ class ThirdViewController: UIViewController {
             //print(path)
             if let dictionary = NSMutableDictionary(contentsOfFile: path){
                 print(dictionary)
-                
+                if let countries = dictionary["countries"] as? [String]{
+                    for v in countries{
+                        print(v)
+                    }
+                }
             }
         }
     }
